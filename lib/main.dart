@@ -52,9 +52,10 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  void _answerQuestion() {
+  void _answerQuestion(int score) {
     // var aBool = true;
     // aBool = false;
+    _totalscore += score;
 
     setState(() {
       _questionIndex = _questionIndex + 1;
